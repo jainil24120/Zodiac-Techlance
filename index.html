@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class=" border-gray-200 dark:bg-gray-900 fixed w-full top-0 z-50">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    
+    <!-- Logo -->
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="./src/Logo.png" class="h-20 sm:h-40" alt="Logo" />
+    </a>
+
+    <!-- CTA & Hamburger -->
+    <div class="flex items-center md:order-2 space-x-2 sm:space-x-4">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Get Started
+      </button>
+      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Toggle menu</span>
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Nav Links -->
+    <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+      <ul class="flex flex-col md:flex-row font-medium mt-4 md:mt-0 p-4 md:p-0 border border-gray-100 rounded-lg md:space-x-8 bg-gray-50 md:bg-transparent md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 px-3 text-xl md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-xl md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 md:dark:hover:text-blue-500">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-xl md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 md:dark:hover:text-blue-500">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-xl md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 md:dark:hover:text-blue-500">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   <div class="relative z-10">
+  <div
+    class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden 
+    [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
+    
+    <svg 
+      class="h-[40rem] w-[70rem] sm:h-[50rem] sm:w-[80rem] md:h-[60rem] md:w-[100rem] 
+      flex-none stroke-blue-600 opacity-20" 
+      aria-hidden="true">
+      
+      <defs>
+        <pattern 
+          id="e9033f3e-f665-41a6-84ef-756f6778e6fe" 
+          width="200" height="200" x="50%" y="50%" 
+          patternUnits="userSpaceOnUse" 
+          patternTransform="translate(-100 0)">
+          <path d="M.5 200V.5H200" fill="none"></path>
+        </pattern>
+      </defs>
+
+      <!-- Optional decorative SVG shapes -->
+      <svg x="50%" y="50%" class="overflow-visible fill-blue-50">
+        <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
+      </svg>
+
+      <!-- Grid background fill -->
+      <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)"></rect>
+    </svg>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('[data-collapse-toggle]');
+    const menu = document.getElementById('navbar-cta');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  });
+</script>
+</body>
+
+</html>
