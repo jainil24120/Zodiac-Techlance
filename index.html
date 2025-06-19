@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <link href="./output.css" rel="stylesheet">
-  <script src="index.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./src/output.css" rel="stylesheet">
+  
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -17,7 +16,7 @@
 
 <body>
 
-  <nav class="sticky top-0 z-50 bg-white shadow-md">
+  <nav class="sticky  z-50 bg-white shadow-md ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16 ">
         <!-- Logo -->
@@ -30,7 +29,7 @@
         </div>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-6 items-center">
+        <div class="hidden xl:flex space-x-6 items-center">
           <a href="#"
             class="overflow-hidden wrapper flex flex-col  h-7  items-center  transition-transform duration-500 ease-in-out  hover:text-indigo-600  text-lg">
             <div class="hover:-translate-y-7 transition-transform duration-300 ease-in-out ">
@@ -85,8 +84,8 @@
         </div>
 
         <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center">
-          <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+        <div class="xl:hidden flex items-center">
+          <button id="menu-toggle" class="text-gray-700 focus:outline-none p-1.5 rounded-md">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
               stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 6h16M4 12h16M4 18h16"></path>
@@ -115,7 +114,7 @@
 
 
 
-  <div class="absolute inset-x-0 top-1/2 -z-50 flex -translate-y-1/2 justify-center overflow-hidden 
+  <div class="absolute inset-x-0 top-1/2 -z-50 flex -translate-y-1/2 justify-center overflow-hidden 0
     [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
 
     <svg class="h-[40rem] w-[70rem] sm:h-[50rem] sm:w-[80rem] md:h-[60rem] md:w-[100rem] 
@@ -137,44 +136,95 @@
       <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)"></rect>
     </svg>
   </div>
-  <div class="HeroSection  flex  h-[100vh]  ">
-    <div class="HeroTitles lg:w-[80vw] w-[98vw]   xl:mx-24 mx-1 mt-24 ">
+  <div class="HeroSection">
+    <div class="HeroTitles lg:w-[80vw] w-[95vw] p-2 mb-12  xl:mx-24 mx-1 mt-24 ">
       <div
         class="Title font-bold  text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 text-left text-[#1E293B] pl-2 sm:pl-8 md:pl-16  ">
         <div>
           <h1 class="">Launch Your Website </h1>
         </div>
-        <div class="">In <span class="text-[#2563eb]">Days</span>, Not in <span
+        <div class="">In <span class="text-[#2563eb]">Days </span>, Not in <span
             class="line-through text-[#2563eb]">Months</span>.</div>
       </div>
-      <div class="SubTitle  flex flex-col xl:flex-row  items-center gap-3 pl-2 sm:pl-8 md:pl-16 text-xl">
+      <div class="SubTitle  flex flex-col xl:flex-row  gap-3  sm:pl-8 md:pl-16 text-xl ">
         <h3>For Startups & SMEs. Business results oriented and AI-powered🚀</h3>
-        <div class="flex flex-col xl:flex-row gap-3 w-full">
+        <div class="flex flex-col md:flex-row gap-3 w-full ">
           <a href="#"
-            class="bg-[#3b82f6] text-white px-6 py-2  rounded-full hover:bg-[#2563eb] transition-all duration-500 ease-in-out">
+            class="bg-[#3b82f6] text-white px-6 py-2  rounded-full hover:bg-[#2563eb] transition-all duration-500 ease-in-out text-center">
             <div class="h-7   overflow-hidden">
-              <div class="hover:-translate-y-7 transition-transform duration-300 ease-in-out">
+              <div class="hover:-translate-y-6 transition-transform duration-300 ease-in-out">
                 <div>Contact Now</div>
                 <div>Contact Now</div>
               </div>
             </div>
           </a>
           <a href="#"
-            class="border-2 border-[#2563eb] px-6 py-2 rounded-full hover:bg-[#2563eb] hover:text-white transition-all duration-500 ease-in-out">
+            class="border-2 border-[#2563eb] px-6 py-2 rounded-full hover:bg-[#2563eb] hover:text-white transition-all duration-500 text-center  ease-in-out">
             <div class="h-7   overflow-hidden">
-              <div class="hover:-translate-y-7 transition-transform duration-300 ease-in-out">
+              <div class="hover:-translate-y-6 transition-transform duration-300 ease-in-out">
                 <div>View Profile <i class="ri-arrow-right-line"></i></div>
                 <div>View Profile <i class="ri-arrow-right-line"></i></div>
               </div>
             </div>
           </a>
         </div>
+      </div> 
+    </div>
+    <!-- <div class="marque-container mt-28 mb-6 rotate-3 bg-amber-200">
+      <div class="animated-scrollingbar">
+        <div id="move" class="py-[0.5vw] bg-[#2563eb] text-white   flex gap-16 overflow-hidden ">
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4> 
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+        </div>
       </div>
     </div>
+    <div class="marque-container  rotate-3 bg-amber-200">
+      <div class="animated-scrollingbar">
+        <div id="move" class="py-[0.5vw] bg-[#2563eb] text-white   flex gap-16 overflow-hidden ">
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4>
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+          <div class="marquee  flex gap-4 items-center shrink-0">
+            <h4 class="md:text-2xl sm:text-[1rem] "> Designing Success, Amplifying Brands</h4> 
+            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" class="w-6 arrow" alt="">
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="marque-images w-50">
+    <div class="marque-image"><img src="./src/Mockup1.png"></div>
+    <div class="marque-image"></div>
+    <div class="marque-image"></div>
+    <div class="marque-image"></div>
   </div>
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
   <script>
     const toggleBtn = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
