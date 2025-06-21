@@ -34,3 +34,40 @@ button{
 .marquee{
     transform: translateX(-100%);
 }
+
+.service-wrapper {
+  animation: scroll-left 20s linear infinite;
+  will-change: transform;
+}
+
+.featured{
+     padding: 10vw 15vw;
+}
+.fimages{
+    display: flex;
+    border: 2px solid red;
+    min-height: 100vh;
+    justify-content:space-between;
+    background-color: #333;
+}
+
+.fleft{
+    width:45%;
+    min-height: inherit;
+    border: 1px solid  blue
+}
+
+.fright{
+    width:45%;
+    min-height: inherit;
+    border: 1px solid  green;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
