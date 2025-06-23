@@ -46,21 +46,38 @@ button{
 .fimages{
     display: flex;
     border: 2px solid red;
-    min-height: 100vh;
+    height: 100vh;
     justify-content:space-between;
-    background-color: #333;
 }
 
 .fleft{
+   overflow: hidden;
     width:45%;
-    min-height: inherit;
+    height: inherit;
     border: 1px solid  blue
 }
 
+.fleftlm{
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width:45%;
-    min-height: inherit;
+    height: inherit;
     border: 1px solid  green;
+}
+
+.fright .images{
+  width: 90%;
+  height: 90%;
+  background-color: red;
 }
 
 @keyframes scroll-left {
