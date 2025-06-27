@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
@@ -16,7 +16,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
 }
 
 .logo_text{
@@ -52,7 +52,6 @@ button{
 }
 .fimages{
     display: flex;
-    /* border: 2px solid red; */
     height: 100vh;
     justify-content:space-between;
 }
@@ -79,12 +78,13 @@ button{
     width:45%;
     height: inherit;
     /* border: 1px solid  green; */
+    
 }
 
 .fright .images{
-  width: 90%;
-  height: 90%;
-  /* background-color: red; */
+  max-width: 500px;
+  max-height: 100vh;
+  /* border: 5px solid red; */
 }
 
 .fright .images img{

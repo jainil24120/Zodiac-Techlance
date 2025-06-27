@@ -1,8 +1,6 @@
 Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
 
-
-
 window.addEventListener("wheel", function(dets){
     if(dets.deltaY>0){
         gsap.to(".marquee",{
@@ -40,7 +38,6 @@ gsap.to(".fleftelm",{
     y:"-300%",
     ease:Power1
 })
-
 
 let sections = document.querySelectorAll(".fleftelm");
 Shery.imageEffect(".images", {
@@ -87,26 +84,6 @@ Shery.imageEffect(".images", {
 //   },
 //   // markers: true // Uncomment for debugging
 // });
-
-
-//  gsap.registerPlugin(ScrollTrigger);
-
-//   const sliderWrapper = document.querySelector(".slider-wrapper");
-//   const slides = document.querySelectorAll(".slide");
-//   const totalWidth = sliderWrapper.scrollWidth;
-
-//   gsap.to(sliderWrapper, {
-//     x: () => -(totalWidth - window.innerWidth + 300), // 300 = 2 * 150px padding
-//     ease: "none",
-//     scrollTrigger: {
-//       trigger: ".projects",
-//       start: "top top",
-//       end: () => "+=" + (totalWidth - window.innerWidth + 300),
-//       scrub: true,
-//       pin: true,
-//       anticipatePin: 1,
-//     },
-//   });
 
 
 // Horizontal Scroll for Projects
