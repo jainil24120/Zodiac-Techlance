@@ -94,14 +94,6 @@ Shery.imageEffect(".images", {
       scrub: true,
       pin: true,
       anticipatePin: 1,
-      onUpdate: self => {
-        const progress = self.progress;
-        if (progress > 0 && progress < 1) {
-          gsap.to("body", { backgroundColor: "#fff", duration: 0.3, overwrite: true });
-        } else {
-          gsap.to("body", { backgroundColor: "#000", duration: 0.3, overwrite: true });
-        }
-      },
     },
   });
 
